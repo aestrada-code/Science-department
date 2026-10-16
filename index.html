@@ -25,34 +25,44 @@
       color: #263548;
     }
 
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 38px 24px;
-    }
+    header{
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:#fff;
+  padding:34px;
+  border-radius:24px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 18px 50px #0f172a22
+}
 
-    .header-content,
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+header:after{
+  content:"🧬  ⚗️  🔬";
+  position:absolute;
+  right:28px;
+  bottom:18px;
+  font-size:42px;
+  opacity:.22;
+  letter-spacing:14px
+}
 
-    h1 {
-      margin: 0 0 10px;
-      font-size: 2rem;
-    }
+h1{
+  font-size:clamp(28px,4vw,52px);
+  margin:0 0 8px;
+  letter-spacing:-1.5px
+}
 
-    header p {
-      margin: 0;
-      line-height: 1.6;
-      max-width: 750px;
-      color: #d0e1f2;
-    }
+.subtitle{
+  color:#dbeafe;
+  max-width:800px;
+  line-height:1.6
+}
 
-    main {
-      padding: 30px 20px;
-    }
-
+.toolbar{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:12px;
+  margin:22px 0
+}
     h2 {
       color: var(--navy);
       font-size: 1.35rem;
