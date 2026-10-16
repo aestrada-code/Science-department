@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Department Portal</title>
+
+  <style>
+    :root {
+      --navy: #0c4187;
+      --bg: #f5f7fa;
+      --line: #dce4ec;
+      --muted: #617084;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: #263548;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 38px 24px;
+    }
+
+    .header-content,
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      line-height: 1.6;
+      max-width: 750px;
+      color: #d0e1f2;
+    }
+
+    main {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .portal-card {
+      display: block;
+      padding: 22px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .portal-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 18px #17365d15;
+    }
+
+    .portal-card h3 {
+      color: var(--navy);
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+    }
+
+    .portal-card p {
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.92rem;
+      margin: 0 0 16px;
+    }
+
+    .portal-card span {
+      color: #175d9a;
+      font-size: 0.88rem;
+      font-weight: bold;
+    }
+
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 25px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 850px) {
+      .portal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 550px) {
+      .portal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>Science Department Portal</h1>
+      <p>
+        Access laboratory inventories, equipment, supplies,
+        kits, and science department resources from one place.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Department Resources</h2>
+
+    <div class="portal-grid">
+
+      <a class="portal-card"
+         href="https://aestrada-code.github.io/HS-306/">
+        <h3>HS-306</h3>
+        <p>Access the HS-306 laboratory website and resources.</p>
+        <span>Open page →</span>
+      </a>
+
+      <a class="portal-card"
+         href="https://aestrada-code.github.io/Inventory/">
+        <h3>Chemical Inventory</h3>
+        <p>Search and browse the department's chemical inventory.</p>
+        <span>Open inventory →</span>
+      </a>
+
+      <a class="portal-card"
+         href="PASTE-HS309-URL-HERE">
+        <h3>HS-309</h3>
+        <p>Access the HS-309 laboratory resources.</p>
+        <span>Open page →</span>
+      </a>
+
+      <a class="portal-card"
+         href="PASTE-KITS-URL-HERE">
+        <h3>Kits</h3>
+        <p>Browse laboratory kits and their associated materials.</p>
+        <span>Browse kits →</span>
+      </a>
+
+      <a class="portal-card"
+         href="PASTE-SUPPLIES-URL-HERE">
+        <h3>Supplies</h3>
+        <p>Find laboratory supplies and related resources.</p>
+        <span>Browse supplies →</span>
+      </a>
+
+      <a class="portal-card"
+         href="PASTE-EQUIPMENT-URL-HERE">
+        <h3>Equipment</h3>
+        <p>Access the department's laboratory equipment resources.</p>
+        <span>Browse equipment →</span>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    Science Department · Resource Portal
+  </footer>
+
+</body>
+</html>
